@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout << "Podaj jakas liczbe: ";
+    cin >> n;
+    if (n - 4)
+        cout << "zmienna n miala wartosc inna niz 4";
+    else
+        cout << "zmienna n miala wartosc rowna 4";
+}
