@@ -1,4 +1,4 @@
-# -Opus-Magnum-C-book-of-Jerzy-Gr-bosz---exercises
+# -Opus-Magnum-CPP11-book-of-Jerzy-Gr-bosz---exercises
 
 ! This are exercises from "Opus magnum CPP11" (book from Jerzy Grębosz - famous polish physician) and they're not my ideas, I only did it by myself for practice !
 
