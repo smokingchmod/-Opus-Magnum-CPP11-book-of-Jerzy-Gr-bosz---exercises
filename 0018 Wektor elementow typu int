@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main()
+{
+	vector<int> ww { 9, 4, 7, -6, 2, 7 };
+	cout << "ww[1]= " << ww[1] << endl;
+
+	int rozmiar = ww.size();
+	cout << "Wektor ww ma elementow " << rozmiar << endl;
+
+	for (int i = 0; i < ww.size(); ++i) {
+		cout << ww[i] << ", ";
+	}
+	cout << endl;
+
+	int b = ww[4] + 500;
+	ww[2] = ww[3] * 10;
+	cout << "b = " << b << " ww[2]= " << ww[2] << endl;
+
+	cout << "Obecna zawartosc wektora ww: " << endl;
+	for (int nr = 0; nr < ww.size(); ++nr)
+	{
+		cout << "ww[" << nr << "] = " << ww[nr];
+		if (ww[nr] == 2) {
+			cout << " dwa!";
+		}
+		cout << endl;
+	}
+}
