@@ -1,0 +1,42 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main()
+{
+	vector<double> liczby { 3.14, 4.4, -6.6, 7.7 };
+	for (auto elem : liczby) {
+		cout << elem << ", ";
+	}
+	for (auto& k : liczby) {
+		k = k * 10;
+	}
+	cout << "\nPo pomnozeniu: ";
+	for (auto elem : liczby) cout << elem << ", ";
+	cout << endl;
+
+
+	string przyslowie{ "Przyszla koza do woza" };
+	cout << "Skakanie po kolejnych znakach stringu\n";
+	for (auto znak : przyslowie) {
+		cout << "-" << znak;
+	}
+	cout << endl;
+	
+	cout << "Pojemnikiem jest tez tresc {...}\n";
+	for (auto x : { 6, 9, 3, 8, 4, 7, 5, 7 }) {
+		cout << x << ", ";
+	}
+	cout << endl;
+
+
+	cout << "zakresowe for potrafi obsluzyc tez tablice\n";
+	int tablica[]{ 100, 200, 300, 50 };
+	for (auto& n : tablica) {
+		cout << n << ",	";
+		n++;
+	}
+	cout << "\nEfekt po inkrementacji\n";
+	for (auto n : tablica)	cout << n << ",	";
+}
