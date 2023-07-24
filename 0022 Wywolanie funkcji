@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+void funkcja(int a = 2, int = 6);
+int kwadrat(int x) { return x * x;  }
+int globalny1 = 32;
+
+int main()
+{
+	funkcja();
+	{
+		cout << "--- Jestesmy w zakresie lokalnym\n";
+
+		funkcja();
+		int lokalny1 = 2;
+
+		void funkcja(int a, int b = 8);
+		funkcja(7);
+
+		globalny1 = 4 + lokalny1;
+
+		void funkcja(int a = kwadrat(globalny1), int);
+		funkcja();
+	}
+	cout << "---Jestesmy poza zakresem lokalnym\n";
+	funkcja();
+}
+
+void funkcja(int a, int b)
+{
+	cout << "Naprawde nastapilo wywolanie: funkcja(" << a << ", " << b << ");" << endl;
+}
